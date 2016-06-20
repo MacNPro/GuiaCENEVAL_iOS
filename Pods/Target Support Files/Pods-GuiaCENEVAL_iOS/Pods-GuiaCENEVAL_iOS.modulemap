@@ -1,0 +1,6 @@
+framework module Pods_GuiaCENEVAL_iOS {
+  umbrella header "Pods-GuiaCENEVAL_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

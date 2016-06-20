@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
-
+    
+    let baseRef = FIRDatabase.database().reference()
     
     @IBOutlet weak var tituloNombreLbl: UILabel!
     @IBOutlet weak var materiaSeleccionadaLbl: UILabel!
@@ -26,8 +28,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn9: UIButton!
     @IBOutlet weak var btn10: UIButton!
 
-    
-    
     var x = 0
     
     let materias: [String] = ["Química", "Filosofía", "Ecología", "Historia de México", "Física", "Ética y Moral", "Ensayo Escrito", "Ciencias Sociales", "Biología", "Matemáticas", "Historia Universal"]
@@ -37,7 +37,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        let examenesRef = baseRef.child("examenes")
+        examenesRef.observeEventType(.Value) { (snap: FIRDataSnapshot) in
+        }
     }
     
     

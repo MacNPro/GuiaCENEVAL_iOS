@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82A3923EAABB48906C321B65 /* Pods_GuiaCENEVAL_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D9014E52B98FFBB24B177 /* Pods_GuiaCENEVAL_iOS.framework */; };
 		DE54A3811D176333007654E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3801D176333007654E3 /* AppDelegate.swift */; };
 		DE54A3831D176333007654E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3821D176333007654E3 /* ViewController.swift */; };
 		DE54A3861D176333007654E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE54A3841D176333007654E3 /* Main.storyboard */; };
@@ -14,9 +15,16 @@
 		DE54A38B1D176333007654E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE54A3891D176333007654E3 /* LaunchScreen.storyboard */; };
 		DE54A3961D17660B007654E3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3951D17660B007654E3 /* RoundButton.swift */; };
 		DE54A3981D17664C007654E3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3971D17664C007654E3 /* CheckBox.swift */; };
+		DE54A39A1D1771EC007654E3 /* ComenzarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3991D1771EC007654E3 /* ComenzarVC.swift */; };
+		DE54A39C1D177233007654E3 /* PreguntaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A39B1D177233007654E3 /* PreguntaVC.swift */; };
+		DE54A39E1D177264007654E3 /* ResultadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A39D1D177264007654E3 /* ResultadoVC.swift */; };
+		DE54A3A01D177FB0007654E3 /* BolitaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A39F1D177FB0007654E3 /* BolitaButton.swift */; };
+		DE54A3A21D17882A007654E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE54A3A11D17882A007654E3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2D9014E52B98FFBB24B177 /* Pods_GuiaCENEVAL_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuiaCENEVAL_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BBD62138BBCABC5C02A4854 /* Pods-GuiaCENEVAL_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuiaCENEVAL_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuiaCENEVAL_iOS/Pods-GuiaCENEVAL_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DE54A37D1D176333007654E3 /* GuiaCENEVAL_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiaCENEVAL_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE54A3801D176333007654E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE54A3821D176333007654E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +34,12 @@
 		DE54A38C1D176333007654E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE54A3951D17660B007654E3 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		DE54A3971D17664C007654E3 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		DE54A3991D1771EC007654E3 /* ComenzarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComenzarVC.swift; sourceTree = "<group>"; };
+		DE54A39B1D177233007654E3 /* PreguntaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreguntaVC.swift; sourceTree = "<group>"; };
+		DE54A39D1D177264007654E3 /* ResultadoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoVC.swift; sourceTree = "<group>"; };
+		DE54A39F1D177FB0007654E3 /* BolitaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BolitaButton.swift; sourceTree = "<group>"; };
+		DE54A3A11D17882A007654E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDC8DB6DEB00B440E04982E3 /* Pods-GuiaCENEVAL_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuiaCENEVAL_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuiaCENEVAL_iOS/Pods-GuiaCENEVAL_iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A3923EAABB48906C321B65 /* Pods_GuiaCENEVAL_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E251783F21BFFD73502F862 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BBD62138BBCABC5C02A4854 /* Pods-GuiaCENEVAL_iOS.debug.xcconfig */,
+				EDC8DB6DEB00B440E04982E3 /* Pods-GuiaCENEVAL_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8B17071408C82015E6C5A5F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C2D9014E52B98FFBB24B177 /* Pods_GuiaCENEVAL_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DE54A3741D176333007654E3 = {
 			isa = PBXGroup;
 			children = (
 				DE54A37F1D176333007654E3 /* GuiaCENEVAL_iOS */,
 				DE54A37E1D176333007654E3 /* Products */,
+				6E251783F21BFFD73502F862 /* Pods */,
+				8B17071408C82015E6C5A5F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +100,7 @@
 				DE54A3871D176333007654E3 /* Assets.xcassets */,
 				DE54A3891D176333007654E3 /* LaunchScreen.storyboard */,
 				DE54A38C1D176333007654E3 /* Info.plist */,
+				DE54A3A11D17882A007654E3 /* GoogleService-Info.plist */,
 			);
 			path = GuiaCENEVAL_iOS;
 			sourceTree = "<group>";
@@ -82,6 +117,7 @@
 			children = (
 				DE54A3951D17660B007654E3 /* RoundButton.swift */,
 				DE54A3971D17664C007654E3 /* CheckBox.swift */,
+				DE54A39F1D177FB0007654E3 /* BolitaButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -90,6 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				DE54A3821D176333007654E3 /* ViewController.swift */,
+				DE54A3991D1771EC007654E3 /* ComenzarVC.swift */,
+				DE54A39B1D177233007654E3 /* PreguntaVC.swift */,
+				DE54A39D1D177264007654E3 /* ResultadoVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -101,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE54A38F1D176333007654E3 /* Build configuration list for PBXNativeTarget "GuiaCENEVAL_iOS" */;
 			buildPhases = (
+				C371BB859BEE15C4A7AA7513 /* [CP] Check Pods Manifest.lock */,
 				DE54A3791D176333007654E3 /* Sources */,
 				DE54A37A1D176333007654E3 /* Frameworks */,
 				DE54A37B1D176333007654E3 /* Resources */,
+				C662FA5C64C2779BF7DA3928 /* [CP] Embed Pods Frameworks */,
+				703F9756E3FB201156D4030A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE54A38B1D176333007654E3 /* LaunchScreen.storyboard in Resources */,
+				DE54A3A21D17882A007654E3 /* GoogleService-Info.plist in Resources */,
 				DE54A3881D176333007654E3 /* Assets.xcassets in Resources */,
 				DE54A3861D176333007654E3 /* Main.storyboard in Resources */,
 			);
@@ -160,14 +203,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		703F9756E3FB201156D4030A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuiaCENEVAL_iOS/Pods-GuiaCENEVAL_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C371BB859BEE15C4A7AA7513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C662FA5C64C2779BF7DA3928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuiaCENEVAL_iOS/Pods-GuiaCENEVAL_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE54A3791D176333007654E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE54A39C1D177233007654E3 /* PreguntaVC.swift in Sources */,
 				DE54A3981D17664C007654E3 /* CheckBox.swift in Sources */,
 				DE54A3961D17660B007654E3 /* RoundButton.swift in Sources */,
+				DE54A39E1D177264007654E3 /* ResultadoVC.swift in Sources */,
+				DE54A3A01D177FB0007654E3 /* BolitaButton.swift in Sources */,
 				DE54A3831D176333007654E3 /* ViewController.swift in Sources */,
+				DE54A39A1D1771EC007654E3 /* ComenzarVC.swift in Sources */,
 				DE54A3811D176333007654E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +374,7 @@
 		};
 		DE54A3901D176333007654E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BBD62138BBCABC5C02A4854 /* Pods-GuiaCENEVAL_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GuiaCENEVAL_iOS/Info.plist;
@@ -290,6 +386,7 @@
 		};
 		DE54A3911D176333007654E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDC8DB6DEB00B440E04982E3 /* Pods-GuiaCENEVAL_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GuiaCENEVAL_iOS/Info.plist;
@@ -318,6 +415,7 @@
 				DE54A3911D176333007654E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
