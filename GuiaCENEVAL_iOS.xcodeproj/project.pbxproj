@@ -12,6 +12,8 @@
 		DE54A3861D176333007654E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE54A3841D176333007654E3 /* Main.storyboard */; };
 		DE54A3881D176333007654E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE54A3871D176333007654E3 /* Assets.xcassets */; };
 		DE54A38B1D176333007654E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE54A3891D176333007654E3 /* LaunchScreen.storyboard */; };
+		DE54A3961D17660B007654E3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3951D17660B007654E3 /* RoundButton.swift */; };
+		DE54A3981D17664C007654E3 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3971D17664C007654E3 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DE54A3871D176333007654E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE54A38A1D176333007654E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE54A38C1D176333007654E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE54A3951D17660B007654E3 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		DE54A3971D17664C007654E3 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		DE54A37F1D176333007654E3 /* GuiaCENEVAL_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DE54A3921D176550007654E3 /* Model */,
+				DE54A3931D17655C007654E3 /* View */,
+				DE54A3941D176566007654E3 /* Controller */,
 				DE54A3801D176333007654E3 /* AppDelegate.swift */,
-				DE54A3821D176333007654E3 /* ViewController.swift */,
 				DE54A3841D176333007654E3 /* Main.storyboard */,
 				DE54A3871D176333007654E3 /* Assets.xcassets */,
 				DE54A3891D176333007654E3 /* LaunchScreen.storyboard */,
 				DE54A38C1D176333007654E3 /* Info.plist */,
 			);
 			path = GuiaCENEVAL_iOS;
+			sourceTree = "<group>";
+		};
+		DE54A3921D176550007654E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DE54A3931D17655C007654E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE54A3951D17660B007654E3 /* RoundButton.swift */,
+				DE54A3971D17664C007654E3 /* CheckBox.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DE54A3941D176566007654E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE54A3821D176333007654E3 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE54A3981D17664C007654E3 /* CheckBox.swift in Sources */,
+				DE54A3961D17660B007654E3 /* RoundButton.swift in Sources */,
 				DE54A3831D176333007654E3 /* ViewController.swift in Sources */,
 				DE54A3811D176333007654E3 /* AppDelegate.swift in Sources */,
 			);
