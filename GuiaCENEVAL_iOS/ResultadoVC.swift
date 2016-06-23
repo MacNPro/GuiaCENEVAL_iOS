@@ -13,6 +13,7 @@ class ResultadoVC: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
+    
+    
 }

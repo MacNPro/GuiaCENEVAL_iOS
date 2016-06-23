@@ -1,10 +1,352 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PZM-iG-w4u">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--RegistroVC-->
+        <scene sceneID="jsE-x9-ggc">
+            <objects>
+                <viewController id="Tni-Yp-Mdo" customClass="RegistroVC" customModule="GuiaCENEVAL_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovx-PY-10Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="i2p-jU-IP4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IcF-ck-Pue">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cS-vp-5AS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.72156862749999995" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="myg-lg-xWJ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yWB-O2-Mgg">
+                                <rect key="frame" x="160" y="99" width="280" height="402"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-TQ-bQx">
+                                        <rect key="frame" x="80" y="0.0" width="120" height="150"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EVe-og-Og8">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="TI1-SQ-cra"/>
+                                                    <constraint firstAttribute="height" constant="120" id="bgf-RX-peh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guia CENEVAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74T-cV-q1o">
+                                                <rect key="frame" x="0.0" y="130" width="120" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="VHa-VQ-tLR"/>
+                                                    <constraint firstAttribute="height" constant="20" id="gGh-n9-Rxj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQm-FF-GjG" customClass="TextFieldPro" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="160" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="isF-2d-GWN"/>
+                                            <constraint firstAttribute="width" constant="280" id="jfx-ht-uRW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQN-6Y-EKN" customClass="TextFieldPro" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="210" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="S2E-bV-9gJ"/>
+                                            <constraint firstAttribute="height" constant="40" id="cCO-KC-9hf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="obK-9E-YTS" customClass="TextFieldPro" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="260" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="CpM-0F-MXa"/>
+                                            <constraint firstAttribute="width" constant="280" id="U2m-13-3wf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verficar contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGp-xW-BDb" customClass="TextFieldPro" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="310" width="280" height="40"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="3Oz-Kc-IGE"/>
+                                            <constraint firstAttribute="height" constant="40" id="fy5-gv-cMG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCx-bB-h9m" customClass="RoundButton" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="47" y="360" width="186" height="42"/>
+                                        <color key="backgroundColor" red="0.043137254899999998" green="0.72156862749999995" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="186" id="lrs-bO-VOt"/>
+                                            <constraint firstAttribute="height" constant="42" id="qQR-Sm-pVz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Regístrate">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registroFirebase:" destination="Tni-Yp-Mdo" eventType="touchUpInside" id="pY7-du-amf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstItem="yWB-O2-Mgg" firstAttribute="centerY" secondItem="IcF-ck-Pue" secondAttribute="centerY" id="6Av-kC-GiV"/>
+                            <constraint firstItem="0cS-vp-5AS" firstAttribute="top" secondItem="IcF-ck-Pue" secondAttribute="top" id="PK5-Rh-NXu"/>
+                            <constraint firstAttribute="trailing" secondItem="0cS-vp-5AS" secondAttribute="trailing" id="dOq-bU-EvJ"/>
+                            <constraint firstItem="0cS-vp-5AS" firstAttribute="leading" secondItem="IcF-ck-Pue" secondAttribute="leading" id="hdM-2b-7th"/>
+                            <constraint firstItem="yWB-O2-Mgg" firstAttribute="centerX" secondItem="IcF-ck-Pue" secondAttribute="centerX" id="u5f-1Z-CXR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contraseña1RegTxtField" destination="obK-9E-YTS" id="oZn-EX-FUz"/>
+                        <outlet property="contraseña2RegTxtField" destination="oGp-xW-BDb" id="Ejn-sZ-rcF"/>
+                        <outlet property="correoRegTxtField" destination="wQN-6Y-EKN" id="TCR-UE-ajA"/>
+                        <outlet property="nombreTxtField" destination="iQm-FF-GjG" id="3PS-Rd-KFk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AW0-c3-nwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="-355"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="IH0-pa-IfU">
+            <objects>
+                <viewController id="PZM-iG-w4u" customClass="LoginVC" customModule="GuiaCENEVAL_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HuN-w7-cQM"/>
+                        <viewControllerLayoutGuide type="bottom" id="PZd-Rd-RSb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5y-aH-Tpd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKE-Zp-5eL">
+                                <rect key="frame" x="240" y="550" width="120" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <state key="normal" title="Regístrate">
+                                    <color key="titleColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tni-Yp-Mdo" kind="show" id="cCl-sN-cEP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98e-Pz-B9X">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.043137254901960784" green="0.72156862745098038" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="APE-VR-ajc"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Wqx-sI-0zU">
+                                <rect key="frame" x="158" y="98" width="284" height="404"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hnz-C5-Ybp">
+                                        <rect key="frame" x="82" y="0.0" width="120" height="150"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QwJ-CL-WJJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="AM3-vA-y5H"/>
+                                                    <constraint firstAttribute="height" constant="120" id="Hym-yf-9Hw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guia CENEVAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epl-2b-8Zb">
+                                                <rect key="frame" x="0.0" y="130" width="120" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Q81-lH-cYo"/>
+                                                    <constraint firstAttribute="height" constant="20" id="RdR-fd-duw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.3294117647" green="0.43137254899999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jAZ-N4-gsj">
+                                        <rect key="frame" x="2" y="180" width="280" height="95"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-s6-eTU" customClass="TextFieldPro" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="4DO-jX-g7a"/>
+                                                    <constraint firstAttribute="width" constant="280" id="s5W-mJ-g1m"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VNE-Wf-yh5" customClass="TextFieldPro" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="55" width="280" height="40"/>
+                                                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="280" id="Cv7-M7-aQd"/>
+                                                    <constraint firstAttribute="height" constant="40" id="DWb-NF-UCI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qsd-1R-TYI">
+                                        <rect key="frame" x="49" y="305" width="186" height="99"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyZ-nS-XT9" customClass="RoundButton" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="42"/>
+                                                <color key="backgroundColor" red="0.043137254901960784" green="0.72156862745098038" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="9fA-dh-bym"/>
+                                                    <constraint firstAttribute="width" constant="186" id="bcQ-Bg-XIG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Iniciar Sesión">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="iniciarSesionBtn:" destination="PZM-iG-w4u" eventType="touchUpInside" id="Ika-7R-gXm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wx7-n4-eRO" customClass="RoundButton" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="57" width="186" height="42"/>
+                                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="186" id="28K-YP-yw1"/>
+                                                    <constraint firstAttribute="height" constant="42" id="fCF-Ie-had"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Iniciar con Facebook">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fbBtnPressed:" destination="PZM-iG-w4u" eventType="touchUpInside" id="Y4R-E9-2Iq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="mj3-tc-jSh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstItem="98e-Pz-B9X" firstAttribute="leading" secondItem="c5y-aH-Tpd" secondAttribute="leading" id="PHg-xC-Ynk"/>
+                            <constraint firstAttribute="trailing" secondItem="98e-Pz-B9X" secondAttribute="trailing" id="ZxN-FB-dbo"/>
+                            <constraint firstItem="lKE-Zp-5eL" firstAttribute="centerX" secondItem="c5y-aH-Tpd" secondAttribute="centerX" id="g98-yl-1FK"/>
+                            <constraint firstItem="Wqx-sI-0zU" firstAttribute="centerY" secondItem="c5y-aH-Tpd" secondAttribute="centerY" id="gdg-6C-uge"/>
+                            <constraint firstItem="Wqx-sI-0zU" firstAttribute="centerX" secondItem="c5y-aH-Tpd" secondAttribute="centerX" id="kOr-4B-Is4"/>
+                            <constraint firstItem="98e-Pz-B9X" firstAttribute="top" secondItem="c5y-aH-Tpd" secondAttribute="top" id="mwc-Pp-8ax"/>
+                            <constraint firstItem="PZd-Rd-RSb" firstAttribute="top" secondItem="lKE-Zp-5eL" secondAttribute="bottom" constant="20" id="wA0-eB-wKa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contraseñaTextField" destination="VNE-Wf-yh5" id="11q-iN-rhS"/>
+                        <outlet property="correoTxtField" destination="Sab-s6-eTU" id="aZk-SK-9UA"/>
+                        <outlet property="iniciarConFbBtn" destination="wx7-n4-eRO" id="2UD-G4-3jF"/>
+                        <outlet property="iniciarSesionBtn" destination="oyZ-nS-XT9" id="oYi-zI-Tjv"/>
+                        <outlet property="registrateBtn" destination="lKE-Zp-5eL" id="kpv-fH-kXw"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loggedIn" id="RSl-79-cav"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k34-zT-l1P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466" y="395"/>
+        </scene>
+        <!--AjustesVC-->
+        <scene sceneID="rZX-Tp-AIZ">
+            <objects>
+                <viewController id="Ndp-mL-nDq" customClass="AjustesVC" customModule="GuiaCENEVAL_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XIw-kG-wrB"/>
+                        <viewControllerLayoutGuide type="bottom" id="PMc-9B-if8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nyp-3Z-kI2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8B5-Gp-EVh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ajustes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqq-Fh-fFm">
+                                        <rect key="frame" x="240" y="22" width="120" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="bh3-ma-dhd"/>
+                                            <constraint firstAttribute="height" constant="30" id="zhd-lF-k8y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPN-YK-q6w">
+                                        <rect key="frame" x="13" y="24" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="YjB-LQ-O0l"/>
+                                            <constraint firstAttribute="height" constant="25" id="zFQ-iC-UNs"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="z9H-Oh-tEe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.043137254899999998" green="0.72156862749999995" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <constraints>
+                                    <constraint firstItem="pPN-YK-q6w" firstAttribute="centerY" secondItem="8B5-Gp-EVh" secondAttribute="centerY" constant="6" id="AOR-bn-lYP"/>
+                                    <constraint firstItem="iqq-Fh-fFm" firstAttribute="centerX" secondItem="8B5-Gp-EVh" secondAttribute="centerX" id="W8Y-4c-x2z"/>
+                                    <constraint firstAttribute="height" constant="60" id="iXA-gl-akK"/>
+                                    <constraint firstItem="iqq-Fh-fFm" firstAttribute="centerY" secondItem="8B5-Gp-EVh" secondAttribute="centerY" constant="7" id="jMw-HV-Eyn"/>
+                                    <constraint firstItem="pPN-YK-q6w" firstAttribute="leading" secondItem="8B5-Gp-EVh" secondAttribute="leading" constant="10" id="zfN-u1-HH0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RD-f8-d51" customClass="RoundButton" customModule="GuiaCENEVAL_iOS" customModuleProvider="target">
+                                <rect key="frame" x="210" y="508" width="180" height="42"/>
+                                <color key="backgroundColor" red="0.82745098039215681" green="0.18431372549019609" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="59y-kO-L48"/>
+                                    <constraint firstAttribute="height" constant="42" id="Qze-N7-O8f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Cerrar Sesión">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cerrarSesionBtn:" destination="Ndp-mL-nDq" eventType="touchUpInside" id="OpL-eZ-VOU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstItem="1RD-f8-d51" firstAttribute="centerX" secondItem="nyp-3Z-kI2" secondAttribute="centerX" id="0Bu-T9-36o"/>
+                            <constraint firstItem="PMc-9B-if8" firstAttribute="top" secondItem="1RD-f8-d51" secondAttribute="bottom" constant="50" id="TP5-eI-hiR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="PZM-iG-w4u" kind="show" identifier="signedOut" id="yQe-zR-8Hs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQU-Ub-DdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="-355"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -18,7 +360,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZv-vF-gdf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="330"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Qué quieres estudiar hoy Daniel?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jQ-XL-5Kh">
                                         <rect key="frame" x="145" y="20" width="310" height="30"/>
@@ -171,18 +513,31 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUi-An-1gu">
+                                        <rect key="frame" x="557" y="287" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="SSK-Wc-IQv"/>
+                                            <constraint firstAttribute="height" constant="35" id="wvY-jM-EKv"/>
+                                        </constraints>
+                                        <state key="normal" image="ajustes"/>
+                                        <connections>
+                                            <segue destination="Ndp-mL-nDq" kind="show" id="bHu-R3-Lr8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.73725490196078436" blue="0.83137254901960778" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GUi-An-1gu" secondAttribute="bottom" constant="8" id="7Pm-WC-DN5"/>
+                                    <constraint firstAttribute="trailing" secondItem="GUi-An-1gu" secondAttribute="trailing" constant="8" id="PqN-A0-nvg"/>
                                     <constraint firstItem="0jQ-XL-5Kh" firstAttribute="centerX" secondItem="JZv-vF-gdf" secondAttribute="centerX" id="S6N-9m-WRp"/>
                                     <constraint firstItem="Vel-O2-wTS" firstAttribute="top" secondItem="0jQ-XL-5Kh" secondAttribute="bottom" constant="25" id="a3f-k5-3nj"/>
                                     <constraint firstItem="Vel-O2-wTS" firstAttribute="centerX" secondItem="JZv-vF-gdf" secondAttribute="centerX" id="c65-O2-h9H"/>
                                     <constraint firstItem="0jQ-XL-5Kh" firstAttribute="top" secondItem="JZv-vF-gdf" secondAttribute="top" constant="20" id="juN-er-uF2"/>
-                                    <constraint firstAttribute="height" constant="300" id="obH-Tq-yul"/>
+                                    <constraint firstAttribute="height" constant="330" id="obH-Tq-yul"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PgJ-L8-G3B">
-                                <rect key="frame" x="193" y="432" width="215" height="148"/>
+                                <rect key="frame" x="193" y="412" width="215" height="148"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elige una Materia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgn-2G-66W">
                                         <rect key="frame" x="0.0" y="0.0" width="215" height="24"/>
@@ -225,7 +580,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JZv-vF-gdf" secondAttribute="trailing" id="1K7-Xg-baX"/>
                             <constraint firstItem="PgJ-L8-G3B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="58w-lh-4VX"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PgJ-L8-G3B" secondAttribute="bottom" constant="20" id="BYj-WP-0Hk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PgJ-L8-G3B" secondAttribute="bottom" constant="40" id="BYj-WP-0Hk"/>
                             <constraint firstItem="JZv-vF-gdf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S0o-px-WXh"/>
                             <constraint firstItem="JZv-vF-gdf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qcn-tK-mVs"/>
                         </constraints>
@@ -453,6 +808,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ajustes" width="128" height="128"/>
         <image name="back" width="128" height="128"/>
         <image name="hover0" width="182" height="182"/>
         <image name="icono0" width="182" height="182"/>
@@ -466,5 +822,9 @@
         <image name="icono7" width="182" height="182"/>
         <image name="icono8" width="182" height="182"/>
         <image name="icono9" width="182" height="182"/>
+        <image name="logo" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="z9H-Oh-tEe"/>
+    </inferredMetricsTieBreakers>
 </document>

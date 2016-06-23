@@ -7,5 +7,6 @@ use_frameworks!
 pod 'Firebase'
 pod 'Firebase/AdMob'
 pod 'Firebase/Database'
+pod 'Firebase/Auth'
 
 end

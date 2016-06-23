@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let examenesRef = baseRef.child("examenes")
-        examenesRef.observeEventType(.Value) { (snap: FIRDataSnapshot) in
+        examenesRef.observeEventType(.Value) { (snap: FIRDataSnapshot) in 
         }
     }
     

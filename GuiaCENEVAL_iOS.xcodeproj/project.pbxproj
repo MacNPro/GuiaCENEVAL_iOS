@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		82A3923EAABB48906C321B65 /* Pods_GuiaCENEVAL_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C2D9014E52B98FFBB24B177 /* Pods_GuiaCENEVAL_iOS.framework */; };
+		DE09CB411D1B84E70054C9A2 /* AjustesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE09CB401D1B84E70054C9A2 /* AjustesVC.swift */; };
+		DE1807E61D1B0DEC00EEA82E /* TextFieldPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1807E51D1B0DEC00EEA82E /* TextFieldPro.swift */; };
+		DE1807E81D1B101D00EEA82E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1807E71D1B101D00EEA82E /* LoginVC.swift */; };
+		DE1807EF1D1B1A7900EEA82E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1807EE1D1B1A7900EEA82E /* FBSDKCoreKit.framework */; };
+		DE1807F11D1B1F2200EEA82E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1807F01D1B1F2200EEA82E /* FBSDKLoginKit.framework */; };
+		DE1807F31D1B47EC00EEA82E /* RegistroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1807F21D1B47EC00EEA82E /* RegistroVC.swift */; };
 		DE54A3811D176333007654E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3801D176333007654E3 /* AppDelegate.swift */; };
 		DE54A3831D176333007654E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE54A3821D176333007654E3 /* ViewController.swift */; };
 		DE54A3861D176333007654E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE54A3841D176333007654E3 /* Main.storyboard */; };
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		2C2D9014E52B98FFBB24B177 /* Pods_GuiaCENEVAL_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuiaCENEVAL_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BBD62138BBCABC5C02A4854 /* Pods-GuiaCENEVAL_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuiaCENEVAL_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuiaCENEVAL_iOS/Pods-GuiaCENEVAL_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DE09CB401D1B84E70054C9A2 /* AjustesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjustesVC.swift; sourceTree = "<group>"; };
+		DE1807E51D1B0DEC00EEA82E /* TextFieldPro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldPro.swift; sourceTree = "<group>"; };
+		DE1807E71D1B101D00EEA82E /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		DE1807EE1D1B1A7900EEA82E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		DE1807F01D1B1F2200EEA82E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		DE1807F21D1B47EC00EEA82E /* RegistroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroVC.swift; sourceTree = "<group>"; };
 		DE54A37D1D176333007654E3 /* GuiaCENEVAL_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiaCENEVAL_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE54A3801D176333007654E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE54A3821D176333007654E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +60,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				82A3923EAABB48906C321B65 /* Pods_GuiaCENEVAL_iOS.framework in Frameworks */,
+				DE1807EF1D1B1A7900EEA82E /* FBSDKCoreKit.framework in Frameworks */,
+				DE1807F11D1B1F2200EEA82E /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +81,15 @@
 			isa = PBXGroup;
 			children = (
 				2C2D9014E52B98FFBB24B177 /* Pods_GuiaCENEVAL_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE1807ED1D1B1A1800EEA82E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE1807F01D1B1F2200EEA82E /* FBSDKLoginKit.framework */,
+				DE1807EE1D1B1A7900EEA82E /* FBSDKCoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,6 +115,7 @@
 		DE54A37F1D176333007654E3 /* GuiaCENEVAL_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DE1807ED1D1B1A1800EEA82E /* Frameworks */,
 				DE54A3921D176550007654E3 /* Model */,
 				DE54A3931D17655C007654E3 /* View */,
 				DE54A3941D176566007654E3 /* Controller */,
@@ -118,6 +142,7 @@
 				DE54A3951D17660B007654E3 /* RoundButton.swift */,
 				DE54A3971D17664C007654E3 /* CheckBox.swift */,
 				DE54A39F1D177FB0007654E3 /* BolitaButton.swift */,
+				DE1807E51D1B0DEC00EEA82E /* TextFieldPro.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -125,10 +150,13 @@
 		DE54A3941D176566007654E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DE1807E71D1B101D00EEA82E /* LoginVC.swift */,
 				DE54A3821D176333007654E3 /* ViewController.swift */,
 				DE54A3991D1771EC007654E3 /* ComenzarVC.swift */,
 				DE54A39B1D177233007654E3 /* PreguntaVC.swift */,
 				DE54A39D1D177264007654E3 /* ResultadoVC.swift */,
+				DE1807F21D1B47EC00EEA82E /* RegistroVC.swift */,
+				DE09CB401D1B84E70054C9A2 /* AjustesVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -258,10 +286,14 @@
 			files = (
 				DE54A39C1D177233007654E3 /* PreguntaVC.swift in Sources */,
 				DE54A3981D17664C007654E3 /* CheckBox.swift in Sources */,
+				DE09CB411D1B84E70054C9A2 /* AjustesVC.swift in Sources */,
+				DE1807E61D1B0DEC00EEA82E /* TextFieldPro.swift in Sources */,
 				DE54A3961D17660B007654E3 /* RoundButton.swift in Sources */,
+				DE1807E81D1B101D00EEA82E /* LoginVC.swift in Sources */,
 				DE54A39E1D177264007654E3 /* ResultadoVC.swift in Sources */,
 				DE54A3A01D177FB0007654E3 /* BolitaButton.swift in Sources */,
 				DE54A3831D176333007654E3 /* ViewController.swift in Sources */,
+				DE1807F31D1B47EC00EEA82E /* RegistroVC.swift in Sources */,
 				DE54A39A1D1771EC007654E3 /* ComenzarVC.swift in Sources */,
 				DE54A3811D176333007654E3 /* AppDelegate.swift in Sources */,
 			);
@@ -377,6 +409,11 @@
 			baseConfigurationReference = 5BBD62138BBCABC5C02A4854 /* Pods-GuiaCENEVAL_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GuiaCENEVAL_iOS",
+				);
 				INFOPLIST_FILE = GuiaCENEVAL_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NivelateOnline.GuiaCENEVAL-iOS";
@@ -389,6 +426,11 @@
 			baseConfigurationReference = EDC8DB6DEB00B440E04982E3 /* Pods-GuiaCENEVAL_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GuiaCENEVAL_iOS",
+				);
 				INFOPLIST_FILE = GuiaCENEVAL_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NivelateOnline.GuiaCENEVAL-iOS";
