@@ -10,6 +10,8 @@ import UIKit
 
 class PreguntaVC: ViewController {
     
+    var numDePreguntas = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

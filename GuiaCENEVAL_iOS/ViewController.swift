@@ -30,7 +30,7 @@ class ViewController: UIViewController {
 
     var x = 0
     
-    let materias: [String] = ["Química", "Filosofía", "Ecología", "Historia de México", "Física", "Ética y Moral", "Ensayo Escrito", "Ciencias Sociales", "Biología", "Matemáticas", "Historia Universal"]
+    let materias: [String] = ["Química", "Filosofía", "Ecología", "Historia de México", "Física", "Ética y Moral", "Ensayo Escrito", "México,Política y Sociedad", "Biología", "Matemáticas", "Historia Universal"]
     
     @IBOutlet var collectionOfButtons: Array<UIButton>?
     
@@ -42,10 +42,17 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
-    @IBAction func onExamenTapped(sender: AnyObject) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        if segue.identifier == "segueComenzar" {
+            if let comenzarVC = segue.destinationViewController as? ComenzarVC {
+                comenzarVC.materiaSeleccionada = materiaSeleccionadaLbl.text
+            }
+        }
+    }
+    
+    @IBAction func onExamenTapped(sender: AnyObject?) {
+        performSegueWithIdentifier("segueComenzar", sender: nil)
     }
     
     @IBAction func onMateriaTapped(sender:UIButton!){

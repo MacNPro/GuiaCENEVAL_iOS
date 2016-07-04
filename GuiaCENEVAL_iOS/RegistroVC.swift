@@ -29,10 +29,10 @@ class RegistroVC: UIViewController {
     
     @IBAction func registroFirebase(sender: AnyObject) {
         
-        nombreTxtField.text = nombreReg
-        correoRegTxtField.text = correoReg
-        contraseña1RegTxtField.text = contraseña1Reg
-        contraseña2RegTxtField.text = contraseña2Reg
+        nombreReg = nombreTxtField.text
+        correoReg = correoRegTxtField.text
+        contraseña1Reg = contraseña1RegTxtField.text
+        contraseña2Reg = contraseña2RegTxtField.text
         
         if contraseña1Reg == contraseña2Reg {
             FIRAuth.auth()?.createUserWithEmail(correoReg, password: contraseña1Reg, completion: { (user, error) in
@@ -41,6 +41,7 @@ class RegistroVC: UIViewController {
                     print("Error al iniciar sesión")
                 } else {
                     self.agregarInfoDeUsuario(self.nombreReg)
+                    
                 }
                 
             })

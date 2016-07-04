@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import Firebase
 import FirebaseAuth
-import FBSDKCoreKit
 import FBSDKLoginKit
 
 class LoginVC: ViewController {
@@ -18,15 +16,19 @@ class LoginVC: ViewController {
     @IBOutlet weak var correoTxtField: TextFieldPro!
     @IBOutlet weak var contraseñaTextField: TextFieldPro!
     @IBOutlet weak var iniciarSesionBtn: RoundButton!
-    @IBOutlet weak var iniciarConFbBtn: RoundButton!
+    @IBOutlet weak var iniciarConFbBtn: FBSDKButton!
     @IBOutlet weak var registrateBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        iniciarConFbBtn.layer.cornerRadius = 21.0
+        iniciarConFbBtn.clipsToBounds = true
+        
         userLoginState()
         
         }
+    
     override func viewDidAppear(animated: Bool) {
         
         FIRAuth.auth()?.addAuthStateDidChangeListener { auth, user in
@@ -45,48 +47,36 @@ class LoginVC: ViewController {
     @IBAction func iniciarSesionBtn(sender: AnyObject) {
         
         if let correo = correoTxtField.text where correo != "", let contraseña = contraseñaTextField.text where contraseña != "" {
-            
             FIRAuth.auth()?.signInWithEmail(correo, password: contraseña) { (user, error) in
-                
                 if error == nil {
                     self.performSegueWithIdentifier("loggedIn", sender: nil)
                 }
-            
             }
         } else {
             mostrarError("Error al iniciar sesíon", msg: "Introduzca correo y contraseña correctas")
         }
-        
     }
     
-    @IBAction func fbBtnPressed(sender: AnyObject) {
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         
-        let facebookLogin = FBSDKLoginManager()
-        
-        func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError?) {
-            if let error = error {
+        if error == nil{
+            
+            let accessToken = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
+            
+            FIRAuth.auth()?.signInWithCredential(accessToken) { (user, error) in
                 
-                print(error.localizedDescription)
-                return
-                
-            } else {
-                
-                let accessToken = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
-                
-                FIRAuth.auth()?.signInWithCredential(accessToken) { (user, error) in
-                    
-                    if error != nil {
-                        print("Login failed. \(error)")
-                    } else {
-                        print("Logged In")
-                        self.performSegueWithIdentifier("loggedIn", sender: nil)
-                    }
+                if error != nil {
+                    print("Login failed. \(error)")
+                } else {
+                    print("Logged In")
+                    self.performSegueWithIdentifier("loggedIn", sender: nil)
                 }
             }
-        
+            
         }
-    
     }
+    
     
     func mostrarError(title: String,msg: String){
         let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.Alert)
@@ -94,6 +84,7 @@ class LoginVC: ViewController {
         alert.addAction(action)
         presentViewController(alert, animated: true, completion: nil)
     }
+    
     
     func userLoginState() {
         
